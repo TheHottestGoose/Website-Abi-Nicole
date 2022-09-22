@@ -4,13 +4,24 @@
     <style> h1 { 
       font-family: Arial, Helvetica, sans-serif;
         color:rgb(34, 45, 62);
-        padding-left: 150px;
+        padding-left: 250px;
         padding-right: 150px;
+        padding-top: 50px;
         }
+        h1:hover{
+          animation: hov 1s ease-in-out infinite alternate;
+        }
+        @keyframes hov {
+          0%{transform: translateX(0px) translateY(0px);}
+          25%{transform: translateX(3px) translateY(5px);}
+          50%{transform:translateX(7px) translateY(5px);}
+          100%{transform: translateX(-5px) translateY(-7px);}
+        } 
         .pflanze {
-          padding-left: 150px;
+          padding-left: 250px;
           padding-right:150px;
-          }
+          font-family: Arial, Helvetica, sans-serif;
+          } 
         body {
           background-image: url("https://media.myswitzerland.com/image/fetch/c_lfill,g_auto,w_3200,h_1800/f_auto,q_80,fl_keep_iptc/https://www.myswitzerland.com/-/media/dam/resources/places/m/e/melchsee-frutt-melchtal-kerns/images%20summer/33582_32001800.jpeg");
           background-repeat: no-repeat;
@@ -18,9 +29,25 @@
           background-size: cover;
         }
             .pflanze{ 
-              color:black
+              color:black;
             }
-    
+        .p2{ 
+          font-size: 0.5cm;
+          font-family: Arial, Helvetica, sans-serif;
+          color: rgb(255, 250, 243);
+          width: 40%;
+          margin: 10% 15%;
+        }
+
+        .img-container > img {
+  display: none;
+}
+
+.img-container > h2:hover ~ img {
+  display: inline-block;
+}
+
+
 
 
     </style>
@@ -29,17 +56,37 @@
 
 </head>
 <body>
-  <h1 class="baum">Welcome to our blog</h1>
-  <p1 class="pflanze">by Nicole and abinaya</p1>
+  <h1 class="baum">Welcome to our Blog</h1>
+  <p1 class="pflanze">by Nicole and Abinaya</p1>
+  <hr>
+  <p class="p2"> Hello!This Website was designed by Abinaya and I. Since we did not know
+       what we wanted to do we decided to just call it a Blog.
+       So what you will find on here will be mainly info and pictures From our Class Camp.
+       And maybe even a little Quiz on our week in Camp.
+      </p>
+<h2 class="Melchtal"></h2>
 
+<div class="img-container">
 <h2>Bilder</h2>
-<img> src=
+<img src="https://media.camptocamp.org/c2corg_active/1522267222_2138838766MI.jpg" alt ="Melchtal">
+</div>
 
+<h2>Info</h2>
+<a href= "https://www.melchsee-frutt.ch/essen-schlafen/gruppenunterkuenfte/sportcamp-melchtal/">Melchtal Info</a>
 
-
+<h2></h2>
 
 <h2>Andere</h2>
 <div class="Andere">
+  <ul>
+<li>
+<a href="#Melchtal">Bilder</a>
+</li>
+<li>
+  <a href="#Melchtal Info">Melchtal Info</a>
+</li>
+    
+  </ul>
 
 
 
